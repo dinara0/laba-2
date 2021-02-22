@@ -77,7 +77,7 @@ public:
 
 class Section {//создаю класс
 protected:
-	Point* p1;
+	Point* p1;//указатели на переменные типа Point
 	Point* p2;
 
 public:

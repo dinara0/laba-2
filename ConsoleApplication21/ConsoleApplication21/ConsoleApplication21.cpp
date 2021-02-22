@@ -1,6 +1,5 @@
 ﻿#include <iostream>
-#include <conio.h>
-#include<TCHAR.H>
+
 
 class Point {//создаю класс
 public:
@@ -30,7 +29,7 @@ public:
 	}
 };
 
-int main(int argc, _TCHAR* argv[])
+int main()
 {
 	{//статические объекты
 		Point p;//вызывает конструктор без параметров

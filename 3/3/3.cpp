@@ -29,14 +29,14 @@ public:
 		printf("%d, %d\n", x, y);
 		printf("~Point()\n");
 	}
-	void move(int dx, int dy) {
+	void move(int dx, int dy) {//реализация метода в определении 
 		x = x + dx;
 		y = y + dy;
 	}
-	void reset();
+	void reset();//определение метода
 
 };
-void Point::reset() {
+void Point::reset() {// реализация метода после определения
 	x = 0;
 	y = 0;
 
@@ -68,7 +68,7 @@ public:
 		printf("%d, %d, %d\n", x, y, z);
 		printf("~Point3D()\n");
 	}
-	void move(int dx, int dy, int dz) {
+	void moveZ(int dz) {
 		z = z + dz;
 	}
 	
@@ -80,9 +80,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	Point3D* p = new Point3D;
 	Point* p1 = new Point3D;
 	
-	
 
 	delete p;
-	
+	delete p1;
 	return 0;
 }
