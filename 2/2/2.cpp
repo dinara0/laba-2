@@ -30,16 +30,16 @@ public:
 	}
 };
 
-int _tmain(int argc, _TCHAR* argv[])
-{
+int main(int argc, _TCHAR* argv[])
+{//создание динамических объектов
 	Point* p = new Point;
 	Point* p2 = new Point(10, 20);
 	Point* p3 = new Point(*p2);
 
-	delete p;
-	delete p2;
+	delete p;//обязательное удаление, 
+	delete p2;//так как объекты созданы динамически
 	delete p3;
 	
-	//_getch();
+	
 	return 0;
 }

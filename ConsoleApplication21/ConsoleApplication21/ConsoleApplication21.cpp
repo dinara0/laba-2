@@ -30,14 +30,14 @@ public:
 	}
 };
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, _TCHAR* argv[])
 {
 	{//статические объекты
-		Point p;
-		Point p2(10, 20);
-		Point p3(p2);
+		Point p;//вызывает конструктор без параметров
+		Point p2(1, 2);//вызывает конструктор с параметрами
+		Point p3(p2);//вызывает копирующий конструктор
 		}
-	_getch();
+	return 0;
 	
 
 }
